@@ -1,16 +1,30 @@
-# Descripción del proyecto
-### Este fue un proyecto que fue pensado para ir al portafolio, originalmente iban a ser muchas menos pruebas pero entre jugar lo que tenia construido, curiosidad y practica terminarón siendo 138 tests automatizados.
-### Si quieres leer lo mas importante o mas relevente te invito a que lo léas directamente desde mi portafolio de Notion, donde resumi lo que realice y agregue videos para corroborar el funciomiento. 
-### 
-# Como correrlo
-### Aunque lamentablemente no pueda automatizar esta parte por que estoy usando el entorno de Tripleten para las pruebas. Requiero encender el server  y que me de los links, puedo crear un codigo que devuelva dichos datos para que lo corras pero la factura de la electricidad por dejar la computadora encendida todo el día no se paga sola, así que si puedes mandame mensaje y te paso ambos links.
-## Primero cambia los links en data.py 
-## Segundo instala pytest y selenium.
-## Tercero ejecuta el test que requieras.
-# Archivos
-## data, Encargado de guardar los datos que se ejecutaran en los demás archivos
-## searchers, encargado de los localizadores y funciones que buscan elementos dentro de la página.
-## ApiRequests, Encargado de la construcción de solicitudes API 
-## helpers, Usa las funciones de todos los demas archivos para construir codigo reutilizable que facilita la lectura de los test y disminuye la cantidad de líneas de los mismos. 
-## Main, Archivo cuyo unico proposito es ejecutar los tests. 
+# Urban Scooter - Pruebas Automatizadas
+
+138 tests automatizados para una aplicación web de renta de scooters, 
+cubriendo pruebas de API REST, flujos end-to-end y validación de 
+formularios con clases de equivalencia y valores límite.
+
+Si quieres ver lo mas relevante, decisiones técnicas y videos 
+del funcionamiento, lo documenté aquí: [Notion](https://app.notion.com/p/Urban-Scooter-138-Test-automatizados-382c7da000378052aeb0ef3b5cd074df)
+
+Numero:+52 55 1404 1866
+## Tecnologías
+- Python, Selenium, Pytest
+- Patrón POM
+- API REST (POST, PUT, GET)
+
+## Cómo ejecutarlo
+El proyecto corre sobre un servidor de TripleTen. Si quieres probarlo, 
+escríbeme y te paso los links activos.
+
+1. Actualiza las URLs en `data.py`
+2. Instala dependencias: `pip install pytest selenium`
+3. Ejecuta el test que necesites: `pytest main.py::nombre_del_test`
+
+## Estructura del proyecto
+- `main.py` — casos de prueba
+- `data.py` — datos de prueba centralizados
+- `searchers.py` — localizadores y funciones de búsqueda en la UI
+- `ApiRequests.py` — construcción de solicitudes API
+- `helpers.py` — lógica reutilizable que simplifica los tests
 
