@@ -18,7 +18,7 @@ El proyecto corre sobre un servidor de TripleTen. Si quieres probarlo,
 escríbeme y te paso los links activos.
 
 1. Actualiza las URLs en `data.py`
-2. Instala dependencias: `pip install pytest selenium`
+2. Instala dependencias: `pip install pytest selenium requests`
 3. Ejecuta el test que necesites: `pytest main.py::nombre_del_test`
 
 ## Estructura del proyecto
